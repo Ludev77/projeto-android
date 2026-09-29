@@ -115,6 +115,11 @@ article h2 {
     color: var(--cor-destaque);
     margin: 25px 0 10px;
     font-family: var(--fonte-idroid);
+    background: linear-gradient(
+        to right, 
+        var(--cor-principal)
+        (var(--cor-branco))
+    );
 }
 
 article p {

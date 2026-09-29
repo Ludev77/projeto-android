@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+@font-face {
+    font-family: "Idroid";
+    src: url("../fontes/idroid.otf") format("opentype");
+}
+
+:root {
+    --cor-fundo: #e8f5e9;
+    --cor-header: #263238;
+    --cor-principal: #3ddc84;
+    --cor-secundaria: #a4c639;
+    --cor-texto: #263238;
+    --cor-branco: #ffffff;
+    --cor-destaque: #1b5e20;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: "Arial Black", Arial, sans-serif;
+    --fonte-idroid: "Idroid", Arial, sans-serif;
+}
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+     background: linear-gradient(
+        to bottom,
+        var(--cor-header),
+        var(--cor-destaque)
+    );
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 30px 20px;
+    font-family: var(--fonte-idroid);
+}
+
+header h1 {
+    font-family: var(--fonte-idroid);
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 700px;
+    margin: auto;
+    font-family: var(--fonte-destaque);
+}
+
+/* =========================
+   NAVEGAÇÃO
+========================= */
+
+nav {
+    background-color: var(--cor-destaque);
+    text-align: center;
+    padding: 10px;
+
+}
+
+nav a  {
+    display: inline-block;
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-destaque);
+}
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+article {
+    background-color: var(--cor-branco);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+article h2 {
+    color: var(--cor-destaque);
+    margin: 25px 0 10px;
+    font-family: var(--fonte-idroid);
+}
+
+article p {
+    line-height: 1.7;
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 1.05em;
+}
+
+article strong {
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+article a {
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+
+/* =========================
+   IMAGENS
+========================= */
+
+article img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* =========================
+   VÍDEO
+========================= */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 25px auto;
+}
+
+/* =========================
+   ASIDE
+========================= */
+
+aside {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    margin: 15px 0 15px 30px;
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside li {
+    margin-bottom: 5px;
+}
+
+abbr {
+    cursor: help;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--cor-header);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+}
+#bugdroid {
+    max-width: 350px ;
+    min-height: 160;
+}
+.video {
+    background-color: #a4c639;
+    margin: 0px -20 30px;
+    padding: 20px;
+}
+picture > img {
+    max-width: 600px;
+    min-width: 320px;
+}
